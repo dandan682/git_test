@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devtools Playground</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Devtools Sandbox</h1>
+    <button>Click</button>
+    <script>
+        console.dir(document)
+        console.log(document.URL)
+        console.error("This is an error")
+        console.warn("This is a warning")
+        console.group("Hello")
+        console.log("Hello John")
+        console.log("Hello John")
+        console.log("Hello Chris")
+        console.groupEnd("Hello")
+        localStorage.setItem('name','John')
+        localStorage.getItem('name')
+        sessionStorage.setItem('car','BMW')
+        // localStorage.clear('name')
+        document.querySelector('button').addEventListener('click',consol)
+        function consol() {
+            console.log("click")
+        }
+        document.cookie = "username=John Doe"
+    </script>
+</body>
+</html>
