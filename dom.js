@@ -32,16 +32,16 @@ console.log(document.forms)
 
 //QUERYSELECTORALL
 
-let titles = document.querySelectorAll('.title')
-console.log(titles)
+// let titles = document.querySelectorAll('.title')
+// console.log(titles)
 
-let odd = document.querySelectorAll("li:nth-child(odd)")
-let even = document.querySelectorAll('li:nth-child(even)')
+// let odd = document.querySelectorAll("li:nth-child(odd)")
+// let even = document.querySelectorAll('li:nth-child(even)')
 
-for (let i = 0; i < odd.length; i++) {
-    odd[i].style.backgroundColor = "#f4f4f4"
-    even[i].style.backgroundColor = '#ccc'
-}
+// for (let i = 0; i < odd.length; i++) {
+//     odd[i].style.backgroundColor = "#f4f4f4"
+//     even[i].style.backgroundColor = '#ccc'
+// }
 
 
 
