@@ -44,7 +44,14 @@ console.log(document.forms)
 //     even[i].style.backgroundColor = '#ccc'
 // }
 
-// let itemList = document.querySelector('#items')
+ let itemList = document.querySelector('#items')
 // console.log(itemList.parentNode)
 // itemList.parentNode.style.backgroundColor = '#f4f4f4'
  
+// Child nodes
+console.log(itemList.children)
+console.log(itemList.children[1])
+itemList.children[1].style.backgroundColor = 'yellow'
+// Firstelemntchild
+console.log(itemList.firstElementChild)
+itemList.firstElementChild.textContent = 'Hello World'
