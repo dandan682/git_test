@@ -52,6 +52,11 @@ console.log(document.forms)
 console.log(itemList.children)
 console.log(itemList.children[1])
 itemList.children[1].style.backgroundColor = 'yellow'
-// Firstelemntchild
+// Firstelementchild
 console.log(itemList.firstElementChild)
-itemList.firstElementChild.textContent = 'Hello World'
+itemList.firstElementChild.textContent = 'Hello 1'
+// Lastlementchild
+console.log(itemList.lastElementChild)
+itemList.lastElementChild.textContent = 'Hello 4'
+
+itemList.previousElementSibling.style.color = "green";
