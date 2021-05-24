@@ -44,6 +44,7 @@ console.log(document.forms)
 //     even[i].style.backgroundColor = '#ccc'
 // }
 
-let itemList = document.querySelector('#items')
-console.log(itemList.parentNode)
-itemList.parentNode.style.backgroundColor = '#f4f4f4'
+// let itemList = document.querySelector('#items')
+// console.log(itemList.parentNode)
+// itemList.parentNode.style.backgroundColor = '#f4f4f4'
+ 
