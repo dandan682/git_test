@@ -44,31 +44,31 @@ console.log(document.forms)
 //     even[i].style.backgroundColor = '#ccc'
 // }
 
- let itemList = document.querySelector('#items')
+//  let itemList = document.querySelector('#items')
 // console.log(itemList.parentNode)
 // itemList.parentNode.style.backgroundColor = '#f4f4f4'
  
 // Child nodes
-console.log(itemList.children)
-console.log(itemList.children[1])
-itemList.children[1].style.backgroundColor = 'yellow'
+// console.log(itemList.children)
+// console.log(itemList.children[1])
+// itemList.children[1].style.backgroundColor = 'yellow'
 // Firstelementchild
-console.log(itemList.firstElementChild)
-itemList.firstElementChild.textContent = 'Hello 1'
+// console.log(itemList.firstElementChild)
+// itemList.firstElementChild.textContent = 'Hello 1'
 // Lastlementchild
-console.log(itemList.lastElementChild)
-itemList.lastElementChild.textContent = 'Hello 4'
+// console.log(itemList.lastElementChild)
+// itemList.lastElementChild.textContent = 'Hello 4'
 
-itemList.previousElementSibling.style.color = "green";
+// itemList.previousElementSibling.style.color = "green";
 
 // Create a div
 // let newDiv = document.createElement('div')
 // Add class
-newDiv.className = 'hello'
+// newDiv.className = 'hello'
 // Add id
-newDiv.id = 'hello1'
+// newDiv.id = 'hello1'
 // Add attr
-newDiv.setAttribute('title', 'Hello div')
+// newDiv.setAttribute('title', 'Hello div')
 // Create text node
 // let newDivText = document.createTextNode('Hello World')
 // Add text to div
@@ -80,9 +80,10 @@ newDiv.setAttribute('title', 'Hello div')
 // newDiv.style.fontSize = '30px'
 // container.insertBefore(newDiv, h1)
 
-let button = document.getElementById('button')
+let button = document.getElementById('button').addEventListener('click', buttonClick)
 
 function buttonClick() {
     console.log('Button clicked')
+    document.getElementById('header-title').textContent = 'Changed'
 }
 
