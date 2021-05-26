@@ -80,7 +80,7 @@ newDiv.setAttribute('title', 'Hello div')
 // newDiv.style.fontSize = '30px'
 // container.insertBefore(newDiv, h1)
 
-let button = 
+let button = document.getElementById('button')
 
 function buttonClick() {
     console.log('Button clicked')
