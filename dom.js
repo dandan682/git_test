@@ -80,10 +80,26 @@ console.log(document.forms)
 // newDiv.style.fontSize = '30px'
 // container.insertBefore(newDiv, h1)
 
-let button = document.getElementById('button').addEventListener('click', buttonClick)
+// let button = document.getElementById('button').addEventListener('click', buttonClick)
 
-function buttonClick() {
-    console.log('Button clicked')
-    document.getElementById('header-title').textContent = 'Changed'
+// function buttonClick(e) {
+//     // console.log('Button clicked')
+//     // document.getElementById('header-title').textContent = 'Changed'
+//     // document.querySelector('#main').style.backgroundColor = '#606060'
+//     console.log(e.target)
+//     console.log(e.type)
+//     console.log(e.clientX)
+//     console.log(e.offsetX)
+//     console.log(e.altKey);
+// }
+
+// let button = document.getElementById('button').addEventListener('click', runEvent)
+// let button = document.getElementById('button').addEventListener('dblclick', runEvent)
+//  let button = document.getElementById('button').addEventListener('mousedown', runEvent)
+let box  = document.getElementById('box')
+box.addEventListener('mouseenter',runEvent)
+box.addEventListener('mouseleave',runEvent)
+
+function runEvent(e) {
+    console.log('EVENT TYPE: '+e.type)
 }
-
