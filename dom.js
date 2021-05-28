@@ -97,12 +97,22 @@ console.log(document.forms)
 // let button = document.getElementById('button').addEventListener('dblclick', runEvent)
 //  let button = document.getElementById('button').addEventListener('mousedown', runEvent)
 let box  = document.getElementById('box')
-box.addEventListener('mouseenter',runEvent)
-box.addEventListener('mouseleave',runEvent)
+let itemInput = document.querySelector('input[type="text"]')
+let form = document.querySelector('form')
+itemInput.addEventListener('keydown',runEvent)
 
-box.addEventListener("mouseover", runEvent);
-box.addEventListener("mouseout", runEvent);
+// box.addEventListener('mouseenter',runEvent)
+// box.addEventListener('mouseleave',runEvent)
+
+// box.addEventListener("mouseover", runEvent);
+// box.addEventListener("mouseout", runEvent);
+
+box.addEventListener("mousemove", runEvent);
+
 
 function runEvent(e) {
     console.log('EVENT TYPE: '+e.type)
+    // output.innerHTML = '<h3>MouseX:'+e.offsetX+'</h3>'
+    // box.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+",40)"
+    // document.body.style.backgroundColor = "rgb(" + e.offsetX + "," + e.offsetY + ",40)";
 }
