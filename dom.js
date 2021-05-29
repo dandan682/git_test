@@ -101,9 +101,16 @@ let itemInput = document.querySelector('input[type="text"]')
 
 let form = document.querySelector('form')
 
-itemInput.addEventListener('keydown',runEvent)
-itemInput.addEventListener("keyup", runEvent);
-itemInput.addEventListener("keypress", runEvent);
+// itemInput.addEventListener('keydown',runEvent)
+// itemInput.addEventListener("keyup", runEvent);
+// itemInput.addEventListener("keypress", runEvent);
+// itemInput.addEventListener("focus", runEvent);
+// itemInput.addEventListener("blur", runEvent);
+// itemInput.addEventListener("cut", runEvent);
+// itemInput.addEventListener("paste", runEvent);
+itemInput.addEventListener("input", runEvent);
+
+
 
 // box.addEventListener('mouseenter',runEvent)
 // box.addEventListener('mouseleave',runEvent)
