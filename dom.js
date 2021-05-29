@@ -96,10 +96,11 @@ console.log(document.forms)
 // let button = document.getElementById('button').addEventListener('click', runEvent)
 // let button = document.getElementById('button').addEventListener('dblclick', runEvent)
 //  let button = document.getElementById('button').addEventListener('mousedown', runEvent)
-let box  = document.getElementById('box')
-let itemInput = document.querySelector('input[type="text"]')
+// let box  = document.getElementById('box')
 
+let itemInput = document.querySelector('input[type="text"]')
 let form = document.querySelector('form')
+let select = document.querySelector('select')
 
 // itemInput.addEventListener('keydown',runEvent)
 // itemInput.addEventListener("keyup", runEvent);
@@ -108,9 +109,12 @@ let form = document.querySelector('form')
 // itemInput.addEventListener("blur", runEvent);
 // itemInput.addEventListener("cut", runEvent);
 // itemInput.addEventListener("paste", runEvent);
-itemInput.addEventListener("input", runEvent);
+// itemInput.addEventListener("input", runEvent)
 
+// select.addEventListener('change', runEvent)
+// select.addEventListener("input", runEvent);
 
+form.addEventListener('submit', runEvent)
 
 // box.addEventListener('mouseenter',runEvent)
 // box.addEventListener('mouseleave',runEvent)
@@ -123,6 +127,9 @@ box.addEventListener("mousemove", runEvent);
 
 function runEvent(e) {
     console.log('EVENT TYPE: '+e.type)
+    // console.log(e.target.value)
+    e.preventDefault()
+
     // output.innerHTML = '<h3>MouseX:'+e.offsetX+'</h3>'
     // box.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+",40)"
     // document.body.style.backgroundColor = "rgb(" + e.offsetX + "," + e.offsetY + ",40)";
