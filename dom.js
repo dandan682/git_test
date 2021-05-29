@@ -98,8 +98,12 @@ console.log(document.forms)
 //  let button = document.getElementById('button').addEventListener('mousedown', runEvent)
 let box  = document.getElementById('box')
 let itemInput = document.querySelector('input[type="text"]')
+
 let form = document.querySelector('form')
+
 itemInput.addEventListener('keydown',runEvent)
+itemInput.addEventListener("keyup", runEvent);
+itemInput.addEventListener("keypress", runEvent);
 
 // box.addEventListener('mouseenter',runEvent)
 // box.addEventListener('mouseleave',runEvent)
