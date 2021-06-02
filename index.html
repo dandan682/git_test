@@ -4,31 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
-          rel="stylesheet"> 
     <title>To Do App</title>
 </head>
 
 <body>
   <header>
-    <article class="header">
-      <h1 class="header-title">Items List</h1>
-      <input type="text" id="filter" class="search" placeholder="Search Items...">
-    </article>
-  </header>
-  <article class="container">
-    <section id="main">
-      <h2>Add Items</h2>
-      <form id="addForm">
-        <input type="text" id="item" class="item">
-        <input type="submit" value="Add" class="add">
-      </form>
-      <h2>Items</h2>
-      <ul id="items" class="items">
-        <li class="list-group-item">Item 1 <button class="delete">X</button></li>
-      </ul>
+    <section class="header">
+      <h1 class="header-title">TODOList</h1>
+      <input type="text" class="search" placeholder="Search Items...">
     </section>
-  </article>
+  </header>
+  <section class="main">
+    <h2>Add Items</h2>
+    <form class="addItem">  
+      <input type="text" class="item-input">
+      <input type="submit" class="add" value="Add">
+    </form>
+    <h2>Items</h2>
+    <div class="container"></div>
+  </section>
   <script src="./toDoApp.js"></script>
 </body>
 </html>
